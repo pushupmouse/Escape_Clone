@@ -215,56 +215,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &826364002
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 826364003}
-  - component: {fileID: 826364004}
-  m_Layer: 0
-  m_Name: Board Builder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &826364003
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 826364002}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &826364004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 826364002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baa32f9e61b08bf4f99e925f877470c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _width: 15
-  _height: 15
-  _boardBlock: {fileID: 648990021503218957, guid: 29ec0ac01a7e3ee479156a66375cc2f9, type: 3}
-  _builder: {fileID: 826364004}
-  _camera: {fileID: 519420032}
-  _cameraOffset: 0.1
 --- !u!1 &999561110
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 999561112}
   - component: {fileID: 999561111}
+  - component: {fileID: 999561113}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: Untagged
@@ -309,10 +260,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &999561113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999561110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa32f9e61b08bf4f99e925f877470c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _level: {fileID: 11400000, guid: 11f58ff9f8f873b40b2d09615d791a28, type: 2}
+  _boardBlock: {fileID: 648990021503218957, guid: 29ec0ac01a7e3ee479156a66375cc2f9, type: 3}
+  _woodBlock: {fileID: 7545650087626537315, guid: b3d0cd93ac9536f41b61eaef305a3ea6, type: 3}
+  _camera: {fileID: 519420031}
+  _cameraOffset: 0.5
+  _cameraZoom: 1.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 999561112}
-  - {fileID: 826364003}
